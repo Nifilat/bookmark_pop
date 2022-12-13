@@ -1,1 +1,3 @@
-export interface IAuthor {}
+export interface IAuthor {
+  name: 'BookmarkPop';
+}
