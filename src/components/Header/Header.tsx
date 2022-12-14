@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 import Logo from '../icons/logo';
 
 const navigation = [
-  { name: 'About Us', href: '#', current: false },
+  { name: 'About Us', href: '/about', current: false },
   { name: 'Features', href: '#', current: false },
   { name: 'Privacy Policy', href: '#', current: false },
   { name: 'Contact Us', href: '#', current: false },
