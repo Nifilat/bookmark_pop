@@ -64,7 +64,10 @@ const Logo = () => {
           </filter>
         </defs>
       </svg>
-      <h2 className="font-bold text-3xl text-black">Bookmark Pop</h2>
+
+      <h2 className="font-bold text-3xl text-black phone:text-base">
+        Bookmark Pop
+      </h2>
     </div>
   );
 };

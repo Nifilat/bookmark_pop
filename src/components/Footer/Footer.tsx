@@ -14,17 +14,17 @@ const Footer = () => {
   const navGroup2 = navigation.slice(3, 6);
   return (
     <div className="bg-primary text-white py-[56px]">
-      <div className="max-w-[90%] mx-auto flex justify-between">
-        <h2>Bookmark Pop</h2>
-        <div className="flex items-center gap-x-10">
-          <nav className="flex items-start flex-col gap-y-2">
+      <div className="max-w-[90%] mx-auto flex justify-between phone:flex-col">
+        <h2 className="phone:hidden">Bookmark Pop</h2>
+        <div className="flex items-center gap-x-10 phone:flex-col phone:mb-4 phone:gap-y-4">
+          <nav className="flex items-start flex-col gap-y-2 phone:flex-row phone:gap-x-4">
             {navGroup1.map(({ name, href, current }, i) => (
               <Link key={i} href={href} className="text-[14px]">
                 {name}
               </Link>
             ))}
           </nav>
-          <nav className="flex items-start flex-col gap-y-2">
+          <nav className="flex items-start flex-col gap-y-2 phone:flex-row phone:gap-x-4">
             {navGroup2.map(({ name, href, current }, i) => (
               <Link key={i} href={href} className="text-[14px]">
                 {name}
@@ -32,7 +32,7 @@ const Footer = () => {
             ))}
           </nav>
         </div>
-        <div>
+        <div className="phone:text-center">
           <small className="block text-sm">&copy; Bookmark Pop</small>
           <small className="text-sm">All Rights Reserved</small>
         </div>
