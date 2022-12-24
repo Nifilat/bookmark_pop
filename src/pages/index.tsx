@@ -1,6 +1,11 @@
 import type { NextPage } from 'next';
 import { Fragment } from 'react';
-import { Button, PageSEO } from '../components';
+import { PageSEO } from '../components';
+import {
+  Hero,
+  Features,
+  AboutBookmarkPop,
+} from '../components/HomePageComponents';
 
 const homeSEOConfig = {
   title: 'Bookmark Pop | All Your Twitter bookmarks in one place',
@@ -15,16 +20,19 @@ const Home: NextPage = () => {
         description={homeSEOConfig.description}
         title={homeSEOConfig.title}
       />
-      <div>
-        <h2>A stress-free way of organizing and accessing bookmarked Tweets</h2>
-        <p>
-          All in one tweet bookmark manager that allows you bookmark tweets,
-          organize them and access them in one place.
+      <Hero />
+      <div className="text-center flex items-center justify-center phone:items-start phone:text-left flex-col gap-y-4 py-4">
+        <h3 className="font-bold text-3xl phone:text-xl text-[#131330]">
+          Do more with Bookmark Pop
+        </h3>
+        <p className="max-w-6xl text-xl phone:text-base text-[#131330] opacity-60">
+          Your bookmarked tweets can be overwhelming, so many tweets to go back
+          to without a control over them. Bookmark Pop has a lot of features
+          that helps ease tweets bookmarking so that you never miss anything.
         </p>
-        <div>
-          <Button title="Get Started" size="sm" />
-        </div>
       </div>
+      <Features />
+      <AboutBookmarkPop />
     </Fragment>
   );
 };

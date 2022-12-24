@@ -74,19 +74,19 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between">
       <Logo />
-      <nav className="flex items-center gap-x-8 phone:hidden">
+      <nav className="flex items-center gap-x-8 hidden">
         {navigation.map(({ name, href, current }, i) => (
           <Link key={i} href={href} className="text-lg">
             {name}
           </Link>
         ))}
       </nav>
-      <div className="phone:hidden">
+      <div>
         <Button title="Get Started" variant="primary" size="sm" />
       </div>
 
       {/* === MOBILE MENU START ==== */}
-      <div className="lg:hidden">
+      <div className="hidden">
         {isMenuOpen && (
           <div className="absolute right-0 mt-8 p-8 bg-white rounded-lg shadow-xl flex flex-col gap-y-4">
             <div className=" flex items-center justify-center flex-col gap-y-4">
