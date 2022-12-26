@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { Fragment } from 'react';
-import { PageSEO } from '../components';
+import { Button, Input, PageSEO } from '../components';
 import {
   Hero,
   Features,
@@ -33,6 +33,24 @@ const Home: NextPage = () => {
       </div>
       <Features />
       <AboutBookmarkPop />
+      <div className="flex items-center justify-center flex-col mt-4 py-8">
+        <h3 className="font-bold text-3xl phone:text-xl text-[#131330] mb-4">
+          Launching soon!
+        </h3>
+
+        <p>Subscribe to get notified when we launch</p>
+
+        <div className="flex items-center justify-between border-2 border-[#338df74d] border-solid rounded-t-[8px] rounded-b-[8px] w-[580px] h-[50px] phone:w-[300px] pl-2 mt-4">
+          <input
+            type="email"
+            placeholder="Your email"
+            className="focus:outline-none focus:border-none focus-within:outline-none focus-within:border-none"
+          />
+          <button className="bg-primary phone:text-base text-white h-[100%] w-[40%] rounded-r-[8px]">
+            Join the waiting list
+          </button>
+        </div>
+      </div>
     </Fragment>
   );
 };

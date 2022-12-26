@@ -9,7 +9,7 @@ interface IFeature {
 
 const Features = () => {
   return (
-    <div className="grid grid-cols-2 phone:grid-cols-1 py-8 mt-4">
+    <div className="grid grid-cols-2 phone:grid-cols-1 lg:grid-cols-2 py-8 mt-4">
       {featuresData.map((feature: IFeature) => (
         <div
           key={feature.id}

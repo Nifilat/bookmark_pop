@@ -74,7 +74,7 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between">
       <Logo />
-      <nav className="flex items-center gap-x-8 hidden">
+      <nav className="items-center gap-x-8 hidden">
         {navigation.map(({ name, href, current }, i) => (
           <Link key={i} href={href} className="text-lg">
             {name}
