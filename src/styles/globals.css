@@ -75,3 +75,35 @@ h6 {
   isolation: isolate;
   height: 100%;
 }
+
+/* .homeImg {
+  background: linear-gradient(0deg, #0071f5 0%, rgba(205, 0, 223, 0.5) 120.74%);
+  opacity: 0.5;
+  filter: blur(200px);
+}
+.bgFilter {
+  filter: drop-shadow(20px 25px 60px rgba(0, 113, 245, 0.25));
+} */
+
+/* .homeImg {
+  background: linear-gradient(
+    180deg,
+    #0071f5 0%,
+    rgba(205, 0, 223, 0.52) 120.74%
+  );
+  opacity: 0.5;
+  filter: blur(200px);
+} */
+/* .hero {
+  background: linear-gradient(
+    180deg,
+    #0071f5 0%,
+    rgba(205, 0, 223, 0.52) 120.74%
+  );
+  opacity: 0.5
+  filter: blur(200px);
+} */
+
+.heroBtn {
+  box-shadow: 0px 16px 24px rgba(0, 103, 223, 0.25);
+}

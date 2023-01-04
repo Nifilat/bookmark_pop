@@ -1,7 +1,12 @@
 export { default as Button } from './Button/Button';
 export { default as PopLogo } from './icons/logo';
 export { default as Input } from './Input/Input';
-export { default as Header } from './Header/Header';
 export { default as Footer } from './Footer/Footer';
 export { default as PageSEO } from './SEO/PageSEO';
-export { default as PageLayout } from './Layout/PageLayout';
+export { default as PageWrapper } from './Layout/PageWrapper';
+export { default as MainHeader } from './MainHeader/index';
+export { default as Navbar } from './MainHeader/Navbar/index';
+export { default as PersonCard } from './icons/PersonCard';
+export { default as OrganizeCard } from './icons/OrganizeCard';
+export { default as DownloadCard } from './icons/DownloadCard';
+export { default as NotificationCard } from './icons/NotificationCard';

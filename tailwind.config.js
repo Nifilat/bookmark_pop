@@ -10,8 +10,10 @@ module.exports = {
     extend: {
       colors: {
         primary: '#0071f5',
+        mainBlue: '#0067DF',
         black: '#0C1015',
         black50: '#35383C',
+        featuresBg: 'rgba(244, 249, 255, 0.6);',
       },
       blackShadow: '2px 2px 15px;',
       screens: {
