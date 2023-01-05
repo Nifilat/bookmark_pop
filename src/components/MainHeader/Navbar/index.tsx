@@ -40,7 +40,7 @@ export default function Navbar() {
         setIsMenuIsOpen={setIsMenuOpen}
       />
       {isMenuOpen && (
-        <div className="bg-white absolute right-0 shadow-2xl p-4 max-w-[200px] flex items-start flex-col gap-y-4">
+        <div className="bg-white z-50 absolute right-0 shadow-2xl p-4 max-w-[200px] flex items-start flex-col gap-y-4">
           <div
             className="flex items-start flex-col"
             onClick={() => closeMenu()}

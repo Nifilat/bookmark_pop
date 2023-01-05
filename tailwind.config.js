@@ -17,8 +17,8 @@ module.exports = {
       },
       blackShadow: '2px 2px 15px;',
       screens: {
-        tablets: { min: '601px' },
-        phone: { max: '600px' },
+        tablets: { min: '641px' },
+        phone: { max: '640px' },
         print: { raw: 'print' },
         ...defaultTheme.screens,
       },

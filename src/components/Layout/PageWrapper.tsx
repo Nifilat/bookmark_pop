@@ -10,7 +10,7 @@ const PageWrapper: React.FC<LayoutProps> = ({ children }) => {
       <div className="max-w-[80%] mx-auto">
         <MainHeader />
       </div>
-      <main className="max-w-[80%] mx-auto">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   );

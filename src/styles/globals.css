@@ -107,3 +107,21 @@ h6 {
 .heroBtn {
   box-shadow: 0px 16px 24px rgba(0, 103, 223, 0.25);
 }
+
+.aboutUs {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 113, 245, 0.1) -6.64%,
+    rgba(205, 0, 223, 0.1) 107.36%
+  );
+
+  color: black;
+}
+
+.aboutUs h2 {
+  color: black;
+}
+
+.aboutUs p {
+  color: black;
+}
