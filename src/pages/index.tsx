@@ -1,8 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
-  Button,
   DownloadCard,
-  Footer,
   NotificationCard,
   OrganizeCard,
   PageWrapper,
@@ -107,21 +105,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* 
-      <section className="py-8 aboutUs">
-        <div className="text-center phone:w-full sm:max-w-2xl sm:mx-auto mb-4">
-          <h2 className="font-bold sm:text-2xl text-lg text-primary mb-4">
-            About Bookmark Pop
-          </h2>
-          <p>
-            <BalanceText ratio={0.5}>
-              {
-                "You bookmarked tweets can be overwhelming to manage with so many tweets to navigate without any control.Bookmark Pop eases this process and makes sure you don't miss anything"
-              }
-            </BalanceText>
-          </p>
-        </div>
-      </section> */}
 
       <section className="callToAction py-14">
         <div className="text-center max-w-[80%] mx-auto">
@@ -129,10 +112,9 @@ const Home = () => {
             Launching soon
           </h2>
           <p>
-            {/* <BalanceText> */}
-            We are almost done building the twitter bookmark manager you've been
-            waiting for. Sign up for early access!
-            {/* </BalanceText> */}
+            {
+              "We are almost done building the twitter bookmark manager you've been waiting for. Sign up for early access!"
+            }
           </p>
 
           <p className="font-bold mt-2">
