@@ -23,7 +23,7 @@ const navItems = [
 
 const MainHeader = () => {
   return (
-    <main>
+    <main className="pt-2 pb-2">
       {/* navigation */}
       <nav className="flex items-center justify-between relative">
         <PopLogo />

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
   DownloadCard,
+  MainFAQ,
   NotificationCard,
   OrganizeCard,
   PageWrapper,
@@ -13,35 +14,39 @@ import VidIcon from '../components/icons/video';
 const Home = () => {
   return (
     <PageWrapper>
-      <section className="hero py-4 flex items-center justify-between phone:flex-col max-w-[80%] mx-auto">
-        <div className="max-w-lg phone:order-2">
-          <h2 className="font-bold text-center sm:text-3xl text-2xl sm:text-left">
-            {' '}
-            A stress-free way of organizing and accessing{' '}
-            <span className="text-primary">bookmarked</span> Tweets
-          </h2>
-          <p className="pt-4 text-center sm:text-left">
-            <BalanceText ratio={0.5}>
-              All in one tweet bookmark manager that allows you to bookmark
-              tweets, organize and access them in one place.
-            </BalanceText>
-          </p>
+      <div className="bg-hero-img bg-no-repeat bg-cover">
+        <section className="py-4 flex items-center justify-between phone:flex-col max-w-[80%] mx-auto">
+          <div className="max-w-lg phone:order-2">
+            <h2 className="font-bold text-center sm:text-3xl text-2xl sm:text-left">
+              {' '}
+              A stress-free way of organizing and accessing{' '}
+              <span className="text-primary">bookmarked</span> Tweets
+            </h2>
+            <p className="pt-4 text-center sm:text-left">
+              <BalanceText ratio={0.5}>
+                All in one tweet bookmark manager that allows you to bookmark
+                tweets, organize and access them in one place.
+              </BalanceText>
+            </p>
 
-          <button className="heroBtn phone:mx-auto phone:w-full phone:justify-center flex items-center gap-x-4 mt-4 text-white px-[24px] py-[16px] bg-primary rounded-lg">
-            <VidIcon />
-            <button>How it works</button>
-          </button>
-        </div>
+            <button className="heroBtn phone:mx-auto phone:w-full phone:justify-center flex items-center gap-x-4 mt-4 text-white px-[24px] py-[16px] bg-primary rounded-lg">
+              <VidIcon />
+              <button>How it works</button>
+            </button>
+          </div>
 
-        <div className="heroImg sm:block phone:order-1">
-          <Image
-            src={'/heroImg.svg'}
-            alt="book icon representing bookmark pop"
-            width={611}
-            height={400}
-          />
-        </div>
-      </section>
+          {/* hero image */}
+          <div className="sm:block phone:order-1">
+            <Image
+              src={'/heroImg.svg'}
+              alt="book icon representing bookmark pop"
+              width={611}
+              height={400}
+              // className="heroImg"
+            />
+          </div>
+        </section>
+      </div>
 
       <section className="pt-4 sm:max-w-[80%] sm:mx-auto">
         <div className="text-center phone:w-full sm:max-w-2xl sm:mx-auto mb-4">
@@ -51,7 +56,7 @@ const Home = () => {
           <p>
             <BalanceText ratio={0.5}>
               {
-                "You bookmarked tweets can be overwhelming to manage with so many tweets to navigate without any control.Bookmark Pop eases this process and makes sure you don't miss anything"
+                "You bookmarked tweets can be overwhelming to manage with so many tweets to navigate without any control. Bookmark Pop eases this process and makes sure you don't miss anything"
               }
             </BalanceText>
           </p>
@@ -104,6 +109,18 @@ const Home = () => {
             <DownloadCard />
           </div>
         </div>
+      </section>
+
+      <section className="faqBackground bg-cover bg-no-repeat bg-center overflow-hidden relative">
+        <div className="text-center py-8 phone:max-w-[80%] phone:mx-auto mb-4">
+          <h2 className="font-bold sm:text-2xl text-lg text-white mb-4">
+            FAQs
+          </h2>
+          <p className="text-white sm:text-base text-xl font-light">
+            Find answers to your most pertinent questions about Bookmark Pop
+          </p>
+        </div>
+        <MainFAQ />
       </section>
 
       <section className="callToAction py-14">

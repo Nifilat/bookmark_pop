@@ -77,31 +77,7 @@ h6 {
 }
 
 /* .homeImg {
-  background: linear-gradient(0deg, #0071f5 0%, rgba(205, 0, 223, 0.5) 120.74%);
-  opacity: 0.5;
-  filter: blur(200px);
-}
-.bgFilter {
-  filter: drop-shadow(20px 25px 60px rgba(0, 113, 245, 0.25));
-} */
-
-/* .homeImg {
-  background: linear-gradient(
-    180deg,
-    #0071f5 0%,
-    rgba(205, 0, 223, 0.52) 120.74%
-  );
-  opacity: 0.5;
-  filter: blur(200px);
-} */
-/* .hero {
-  background: linear-gradient(
-    180deg,
-    #0071f5 0%,
-    rgba(205, 0, 223, 0.52) 120.74%
-  );
-  opacity: 0.5
-  filter: blur(200px);
+  background-image: url('../assets/heroBg.png');
 } */
 
 .heroBtn {
@@ -124,4 +100,10 @@ h6 {
 
 .aboutUs p {
   color: black;
+}
+
+.faqBackground {
+  /* background: url('/faq-bg.png'), #000; */
+  background-color: #000;
+  background-image: url('../assets/faq-bg.png');
 }

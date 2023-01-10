@@ -10,3 +10,4 @@ export { default as PersonCard } from './icons/PersonCard';
 export { default as OrganizeCard } from './icons/OrganizeCard';
 export { default as DownloadCard } from './icons/DownloadCard';
 export { default as NotificationCard } from './icons/NotificationCard';
+export { default as MainFAQ } from './FAQ/MainFAQ';
