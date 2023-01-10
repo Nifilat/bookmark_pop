@@ -14,7 +14,7 @@ import VidIcon from '../components/icons/video';
 const Home = () => {
   return (
     <PageWrapper>
-      <div className="bg-hero-img bg-no-repeat bg-cover">
+      <div className="bg-hero-img bg-no-repeat bg-cover pb-10">
         <section className="py-4 flex items-center justify-between phone:flex-col max-w-[80%] mx-auto">
           <div className="max-w-lg phone:order-2">
             <h2 className="font-bold text-center sm:text-3xl text-2xl sm:text-left">
@@ -42,7 +42,6 @@ const Home = () => {
               alt="book icon representing bookmark pop"
               width={611}
               height={400}
-              // className="heroImg"
             />
           </div>
         </section>
@@ -111,7 +110,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="faqBackground bg-cover bg-no-repeat bg-center overflow-hidden relative">
+      <section className="faqBackground bg-cover bg-no-repeat bg-right-bottom overflow-hidden relative">
         <div className="text-center py-8 phone:max-w-[80%] phone:mx-auto mb-4">
           <h2 className="font-bold sm:text-2xl text-lg text-white mb-4">
             FAQs
@@ -123,7 +122,7 @@ const Home = () => {
         <MainFAQ />
       </section>
 
-      <section className="callToAction py-14">
+      <section className="callToAction py-16">
         <div className="text-center max-w-[80%] mx-auto">
           <h2 className="font-bold text-center text-2xl text-primary mb-4">
             Launching soon
@@ -142,11 +141,13 @@ const Home = () => {
             <input
               type="email"
               placeholder="email"
-              className="sm:w-3/4 w-3/6 outline-none border-none focus-within:outline-none indent-4"
+              className="sm:w-3/4 w-3/6 rounded-md h-full outline-none border-none focus-within:outline-none indent-4"
             />
-            <button className="bg-mainBlue text-white px-4 w-3/6 sm:w-1/4 h-[100%]">
-              Join the waiting list
-            </button>
+            <div className="w-3/6 sm:w-1/4 h-full">
+              <button className="bg-mainBlue text-white px-4 w-full rounded-r-md h-[100%]">
+                Join the waiting list
+              </button>
+            </div>
           </div>
         </div>
       </section>

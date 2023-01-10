@@ -32,9 +32,11 @@ const Footer = () => {
             ))}
           </nav>
         </div> */}
-        <div className="phone:text-center">
-          <small className="block text-sm">&copy; Bookmark Pop</small>
-          <small className="text-sm">All Rights Reserved</small>
+        <div className="text-center mx-auto">
+          <div>
+            <small className="block text-sm">&copy; Bookmark Pop</small>
+            <small className="text-sm">All Rights Reserved</small>
+          </div>
         </div>
       </div>
     </div>

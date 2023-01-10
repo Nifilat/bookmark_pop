@@ -12,6 +12,7 @@ module.exports = {
         'hero-gradient':
           'bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-800 via-blue-500 to-neutral-400',
         'hero-img': "url('../assets/hero-bg.png')",
+        'launch-img': "url('../assets/launch-bg.png')",
       },
       background: {
         faq: "url('/faq-bg.png'), rgba(0, 0, 0)",

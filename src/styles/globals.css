@@ -107,3 +107,10 @@ h6 {
   background-color: #000;
   background-image: url('../assets/faq-bg.png');
 }
+
+.callToAction {
+  background-image: url('../assets//launch-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

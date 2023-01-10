@@ -15,17 +15,17 @@ export default function MainFAQ() {
   let direction = count > prev! ? ' increasing' : 'decreasing';
 
   return (
-    <div className="text-white py-4 max-h-[500px] overflow-hidden mx-auto flex items-center justify-center flex-col">
+    <div className="text-white py-4 max-h-[700px] overflow-hidden mx-auto flex items-center justify-center flex-col">
       <AnimatePresence>
         <motion.div
           key={count}
           initial={{ x: direction === 'increasing' ? 100 : -100 }}
           animate={{ x: 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 1 }}
           // exit={{ x: direction === 'increasing' ? -100 : 100 }}
-          exit={{ x: -1000 }}
+          // exit={{ x: -1000 }}
         >
-          <div className="bg-white rounded-md shadow-md max-w-[350px] max-h-[300px] p-8 mb-4">
+          <div className="bg-white rounded-md shadow-md max-w-[600px] phone:max-w-[300px] phone:h-auto max-h-[500px] p-8 mb-4">
             <h2 className="text-black font-bold mb-2">
               {faqData[count].question}
             </h2>
